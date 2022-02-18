@@ -1,5 +1,5 @@
 <div class="messege">
-  <p id="notice"> <!--サクセスメッセージ-->
+  <p id="notice">
     <%= notice %>
   </p>
 </div>
@@ -46,7 +46,7 @@
     <% end %>
   <% end %>
 
-  <%= form_with model:@book, url:"/books", local:true do |f| %> <!--投稿フォーム-->
+  <%= form_with model:@book, url:"/books", local:true do |f| %>
     <div class="field">
       <label for="book_title">Title</label>
       <%= f.text_field :title %>
